@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sorting Array</title>
+  <script>
+    var abc = [12, 65, 53, 85, 72];
+    
+    // Display the array elements
+    for (var i = 0; i < 5; i++) {
+      document.write(abc[i] + "<br>");
+    }
+    
+    // Sorting the array
+    for (var i = 0; i < 5; i++) {
+      for (var j = i + 1; j < 5; j++) {
+        if (abc[i] > abc[j]) {
+          var temp = abc[i];
+          abc[i] = abc[j];
+          abc[j] = temp;
+        }
+      }
+    }
+    
+    document.write("<br>");
+    
+    // Display the sorted array
+    for (var i = 0; i < 5; i++) {
+      document.write(abc[i] + "<br>");
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
